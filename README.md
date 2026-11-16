@@ -1,4 +1,6 @@
-# Windows 11 ARM64 on OnePlus Open
+# THIS IS CURRENTLY JUST A FORK OF THE ONEPLUS OPEN PROJECT, NO WORK HAS BEEN DONE YET
+
+### Windows 11 ARM64 on OnePlus Open
 
 Native Windows on the **OnePlus Open**, built around Qualcomm **Snapdragon 8 Gen 2 / SM8550** and **Adreno 740**. Full Windows 11 and WinPE have booted on the phone, with the inner display, internal storage and native touch demonstrated. Bringing up this foldable required device-specific UEFI/ACPI, interrupt, DMA/MMU, power and driver integration.
 
@@ -16,30 +18,30 @@ The project reuses Windows ARM64 CPU/storage/USB stacks and OEM firmware, develo
 
 | Area | Status | Notes |
 |---|---|---|
-| UEFI / ACPI | **WORKS ✅** | Boots WinPE and full Windows 11. |
-| CPU | **WORKS ✅** | Native ARM64 execution; all eight logical processors available. |
-| RAM | **WORKS ✅** | Working Windows memory and native allocations. |
-| UFS / installation | **WORKS ✅** | Windows installed on and booting from internal storage. |
-| Inner display | **WORKS ✅** | Usable Windows desktop with scaling; currently framebuffer rendering. |
-| Touch | **WORKS ✅** | Native touchscreen input; sustained everyday use demonstrated. |
-| USB debugging / control | **WORKS ✅** | Kernel debugging and remote control over USB. |
-| Cover display / folding | **PARTIAL 🟡** | Cover image can be cleared to black; panel switching and folding remain unfinished. |
-| Physical buttons | **IN PROGRESS 🛠️** | Hardware reader implemented; power-button behavior awaits a physical test. |
-| GPU / WDDM acceleration | **IN PROGRESS 🛠️** | GMU/HFI and a hardware memory-translation witness work; first command/fence and WDDM remain. |
-| Wi-Fi | **IN PROGRESS 🛠️** | Firmware loads and initial exchanges work; response/credit stalls block usable networking. |
-| USB peripherals | **NOT WORKING ❌** | External keyboard / host-mode support remains unfinished. |
-| Crash recovery | **PARTIAL 🟡** | Recovery tools work; automatic reconnection is not reliable after every crash. |
-| Battery reporting | **IN PROGRESS 🛠️** | Raw sensor readings acquired; Windows battery reporting remains unfinished. |
-| Charging | **IN PROGRESS 🛠️** | Charging current measured in bounded WinPE tests; normal Windows charging remains unfinished. |
-| Power management | **PARTIAL 🟡** | Usable while awake; suspend/resume and power-saving integration remain unfinished. |
-| Audio | **NOT WORKING ❌** | Speakers and microphone remain unfinished. |
-| Bluetooth | **NOT WORKING ❌** | Windows radio integration remains unfinished. |
-| Motion / light / proximity sensors | **NOT WORKING ❌** | Windows sensor integration remains unfinished. |
-| Cameras | **NOT WORKING ❌** | Sensor/ISP and Windows camera integration remain unfinished. |
-| Cellular | **NOT WORKING ❌** | Modem/SIM and mobile-network integration remain unfinished. |
-| GNSS | **NOT WORKING ❌** | Windows location integration remains unfinished. |
-| NFC | **NOT WORKING ❌** | Windows NFC integration remains unfinished. |
-| TPM / production boot security | **NOT WORKING ❌** | Windows TPM and production Secure Boot integration remain unfinished. |
+| UEFI / ACPI | **WORKS ** | Boots WinPE and full Windows 11. |
+| CPU | **WORKS ** | Native ARM64 execution; all eight logical processors available. |
+| RAM | **WORKS ** | Working Windows memory and native allocations. |
+| UFS / installation | **WORKS ** | Windows installed on and booting from internal storage. |
+| Inner display | **WORKS ** | Usable Windows desktop with scaling; currently framebuffer rendering. |
+| Touch | **WORKS ** | Native touchscreen input; sustained everyday use demonstrated. |
+| USB debugging / control | **WORKS ** | Kernel debugging and remote control over USB. |
+| Cover display / folding | **PARTIAL ** | Cover image can be cleared to black; panel switching and folding remain unfinished. |
+| Physical buttons | **IN PROGRESS ** | Hardware reader implemented; power-button behavior awaits a physical test. |
+| GPU / WDDM acceleration | **IN PROGRESS ** | GMU/HFI and a hardware memory-translation witness work; first command/fence and WDDM remain. |
+| Wi-Fi | **IN PROGRESS ** | Firmware loads and initial exchanges work; response/credit stalls block usable networking. |
+| USB peripherals | **NOT WORKING ** | External keyboard / host-mode support remains unfinished. |
+| Crash recovery | **PARTIAL ** | Recovery tools work; automatic reconnection is not reliable after every crash. |
+| Battery reporting | **IN PROGRESS ** | Raw sensor readings acquired; Windows battery reporting remains unfinished. |
+| Charging | **IN PROGRESS ** | Charging current measured in bounded WinPE tests; normal Windows charging remains unfinished. |
+| Power management | **PARTIAL ** | Usable while awake; suspend/resume and power-saving integration remain unfinished. |
+| Audio | **NOT WORKING ** | Speakers and microphone remain unfinished. |
+| Bluetooth | **NOT WORKING ** | Windows radio integration remains unfinished. |
+| Motion / light / proximity sensors | **NOT WORKING ** | Windows sensor integration remains unfinished. |
+| Cameras | **NOT WORKING ** | Sensor/ISP and Windows camera integration remain unfinished. |
+| Cellular | **NOT WORKING ** | Modem/SIM and mobile-network integration remain unfinished. |
+| GNSS | **NOT WORKING ** | Windows location integration remains unfinished. |
+| NFC | **NOT WORKING ** | Windows NFC integration remains unfinished. |
+| TPM / production boot security | **NOT WORKING ** | Windows TPM and production Secure Boot integration remain unfinished. |
 
 
 <details>
